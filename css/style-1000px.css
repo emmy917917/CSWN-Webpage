@@ -37,11 +37,11 @@
 
 		#header nav {
 			line-height: 74px;
-			font-size: 1.1em;
+			font-size: 1em;
 		}
 		
 			#header nav a {
-				padding: 0 20px 0 20px;
+				padding: 0px 8px;
 			}
 
 /* Banner */
