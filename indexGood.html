@@ -16,10 +16,14 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script type='text/javascript' src="js/gcal.js"></script>
+		<script src="js/fullcalendar.min.js"></script>
 		<link rel="stylesheet" href="css/skel.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-desktop.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="css/fullcalendar.min.css" />
+		<link rel="stylesheet" type="css/fullcalendar.print.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 	</head>
@@ -96,7 +100,13 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 						<section>
 							<h2>Like Us on Facebook!</h2>
 							<footer>
-								<iframe allowtransparency="true" src="http://www.facebook.com/connect/connect.php?id=154004811319982&amp;connections=0&amp;stream=1" color="#007294" style="border: 1px; width: 100%; height: 380px; padding: 0px 0px 0px 15px; float: right;" scrolling="no"></iframe>
+								<script type='text/javascript'>
+								$(document).ready(function() {
+								$('#calendar').fullCalendar({
+								events: 'https://www.google.com/calendar/feeds/u8qldq2onq419ou9ph3p0co7j8%40group.calendar.google.com/public/basic'
+								});
+								});
+								</script>
 							</footer>
 						</section>
 					</div>
@@ -113,16 +123,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		</div>
 	</body>
 </html>
-
 <!--
 										<div class="dropdown">
-											<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Events
-											<span class="caret"></span>
-											</button>
-											<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-												<li><a href="hackathon.html">Microsoft Hackathon</a></li>
-												<li><a href="pastevents.html">Past Events</a></li>
-											</ul>
+													<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Events
+													<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+																<li><a href="hackathon.html">Microsoft Hackathon</a></li>
+																<li><a href="pastevents.html">Past Events</a></li>
+													</ul>
 										</div>
-										-->
+-->
